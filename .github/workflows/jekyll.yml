@@ -45,7 +45,9 @@ jobs:
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: |
+          gem install bundler jekyll
           cd blog
+          bundle install
           bundle exec jekyll build -d ../_site/blog --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
