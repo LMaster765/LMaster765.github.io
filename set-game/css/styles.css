@@ -15,7 +15,9 @@
 
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
+}
 
+html {
   --webkit-text-size-adjust: 100%;
 }
 
